@@ -13,12 +13,12 @@ script: ./mvnw clean install
 deploy:
   provider: elasticbeanstalk
   skip_cleanup: true
-  region: us-east-2
-  app: springboot-gta-alpha
-  env: SpringbootGtaAlpha-env
-  zip_file: 'target/springboot-gta-alpha-0.0.1-SNAPSHOT.jar'
-  bucket_name: elasticbeanstalk-us-east-2-693831461729
-  bucket_path: springboot-gta-alpha
+  region: us-east-1
+  app: springboot-gta-gamma
+  env: SpringbootGtaGamma-env
+  zip_file: 'target/springboot-gta-gamma-0.0.1-SNAPSHOT.jar'
+  bucket_name: elasticbeanstalk-us-east-1-582846088800
+  bucket_path: springboot-gta-gamma
   on: 
     branch: main
   access_key_id: $AWS_ACCESS_KEY_ID
